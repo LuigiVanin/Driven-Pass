@@ -18,6 +18,14 @@ const authRepository = {
             },
         });
     },
+
+    async getUserById(id: number) {
+        return await prisma.user.findUnique({
+            where: {
+                id,
+            },
+        });
+    },
 };
 
 export default authRepository;

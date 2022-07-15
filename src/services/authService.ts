@@ -32,7 +32,7 @@ const authService = {
                 "Senha incorreta!"
             );
         }
-        const key = process.env.JSON_KEY || "default key";
+        const key = process.env.JWT_KEY || "default key";
         const token = jwt.sign({ id: user.id, email: user.email }, key);
         return token;
     },
