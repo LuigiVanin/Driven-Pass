@@ -38,6 +38,32 @@ const cardRepository = {
             },
         });
     },
+
+    async getAllItens(userId: number) {
+        return await prisma.card.findMany({
+            where: {
+                userId,
+            },
+        });
+    },
+
+    async getItemByUserIdAndId(cardId: number, userId: number) {
+        const item = await prisma.card.findFirst({
+            where: {
+                id: cardId,
+                userId,
+            },
+        });
+        return item;
+    },
+
+    async deleteItemById(cardId: number) {
+        await prisma.card.delete({
+            where: {
+                id: cardId,
+            },
+        });
+    },
 };
 
 export default cardRepository;

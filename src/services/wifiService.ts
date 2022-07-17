@@ -1,5 +1,6 @@
 import Cryptr from "cryptr";
 import prisma from "../config/database";
+import wifiRepository from "../repositories/wifiRepository";
 import HttpError from "../utils/exceptions";
 import { idSchema } from "../utils/schemas";
 import { StatusCode } from "../utils/statusCode";
@@ -13,22 +14,11 @@ const wifiService = {
         password: string,
         userId: number
     ) {
-        await prisma.wifi.create({
-            data: {
-                label,
-                name,
-                password: this.crypt.encrypt(password),
-                userId,
-            },
-        });
+        await wifiRepository.createItem(label, name, password, userId);
     },
 
     async getAll(userId: number) {
-        const itens = await prisma.wifi.findMany({
-            where: {
-                userId,
-            },
-        });
+        const itens = await wifiRepository.getItensByUserId(userId);
 
         return itens.map((item) => {
             return {
@@ -47,12 +37,7 @@ const wifiService = {
             );
         }
         wifiId = validation.value as number;
-        const item = await prisma.wifi.findFirst({
-            where: {
-                userId,
-                id: wifiId,
-            },
-        });
+        const item = await wifiRepository.getItemByUserIdAndId(userId, wifiId);
         if (!item) {
             throw new HttpError(
                 StatusCode.Forbidden_403,
@@ -75,23 +60,14 @@ const wifiService = {
             );
         }
         wifiId = validation.value as number;
-        const item = await prisma.wifi.findFirst({
-            where: {
-                userId,
-                id: wifiId,
-            },
-        });
+        const item = await wifiRepository.getItemByUserIdAndId(userId, wifiId);
         if (!item) {
             throw new HttpError(
                 StatusCode.Forbidden_403,
                 "A credencial não existe ou não pertece a você"
             );
         }
-        await prisma.wifi.delete({
-            where: {
-                id: wifiId,
-            },
-        });
+        await wifiRepository.deleteItemById(wifiId);
     },
 };
 

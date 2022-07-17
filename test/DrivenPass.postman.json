@@ -16,7 +16,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"email\": \"luisfvanin3@gmail.com\",\n    \"password\": \"1234567890\"\n}",
+							"raw": "{\n    \"email\": \"luisfvanin2@gmail.com\",\n    \"password\": \"1234567890\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -42,7 +42,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"email\": \"luisfvanin3@gmail.com\",\n    \"password\": \"1234567890\"\n}",
+							"raw": "{\n    \"email\": \"luisfvanin2@gmail.com\",\n    \"password\": \"1234567890\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -84,7 +84,7 @@
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJsdWlzZnZhbmluM0BnbWFpbC5jb20iLCJpYXQiOjE2NTgwMTAzNDF9.93kLoSl24RiSIGaYts1gzpy2U6N1FbRBctZxferzk1w",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiZW1haWwiOiJsdWlzZnZhbmluMkBnbWFpbC5jb20iLCJpYXQiOjE2NTgwOTc0MzR9.-c2PWQRtFePDEYC_E4T6iEONYc9Zma_2o7Xod_VwVrI",
 								"type": "text"
 							},
 							{
@@ -95,7 +95,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"label\":\"qualquer coisa 2\", \n    \"url\": \"https://\", \n    \"password\": \"uam senha\", \n    \"username\": \"meu nome de usuário\"\n}",
+							"raw": "{\n    \"label\":\"qualquer coisa 3\", \n    \"url\": \"https://\", \n    \"password\": \"uam senha\", \n    \"username\": \"meu nome de usuário\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -121,18 +121,18 @@
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJsdWlzZnZhbmluM0BnbWFpbC5jb20iLCJpYXQiOjE2NTgwMTAzNDF9.93kLoSl24RiSIGaYts1gzpy2U6N1FbRBctZxferzk1w",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiZW1haWwiOiJsdWlzZnZhbmluMkBnbWFpbC5jb20iLCJpYXQiOjE2NTgwOTc0MzR9.-c2PWQRtFePDEYC_E4T6iEONYc9Zma_2o7Xod_VwVrI",
 								"type": "text"
 							}
 						],
 						"url": {
-							"raw": "{{baseUrl}}/credential/3",
+							"raw": "{{baseUrl}}/credential/4",
 							"host": [
 								"{{baseUrl}}"
 							],
 							"path": [
 								"credential",
-								"3"
+								"4"
 							]
 						}
 					},
@@ -145,18 +145,18 @@
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJsdWlzZnZhbmluM0BnbWFpbC5jb20iLCJpYXQiOjE2NTgwMTAzNDF9.93kLoSl24RiSIGaYts1gzpy2U6N1FbRBctZxferzk1w",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiZW1haWwiOiJsdWlzZnZhbmluMkBnbWFpbC5jb20iLCJpYXQiOjE2NTgwOTc0MzR9.-c2PWQRtFePDEYC_E4T6iEONYc9Zma_2o7Xod_VwVrI",
 								"type": "text"
 							}
 						],
 						"url": {
-							"raw": "{{baseUrl}}/credential/1",
+							"raw": "{{baseUrl}}/credential/4",
 							"host": [
 								"{{baseUrl}}"
 							],
 							"path": [
 								"credential",
-								"1"
+								"4"
 							]
 						}
 					},
@@ -169,7 +169,7 @@
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJsdWlzZnZhbmluM0BnbWFpbC5jb20iLCJpYXQiOjE2NTgwMTAzNDF9.93kLoSl24RiSIGaYts1gzpy2U6N1FbRBctZxferzk1w",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiZW1haWwiOiJsdWlzZnZhbmluMkBnbWFpbC5jb20iLCJpYXQiOjE2NTgwOTc0MzR9.-c2PWQRtFePDEYC_E4T6iEONYc9Zma_2o7Xod_VwVrI",
 								"type": "text"
 							}
 						],
@@ -198,13 +198,13 @@
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJsdWlzZnZhbmluM0BnbWFpbC5jb20iLCJpYXQiOjE2NTgwMTAzNDF9.93kLoSl24RiSIGaYts1gzpy2U6N1FbRBctZxferzk1w",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiZW1haWwiOiJsdWlzZnZhbmluMkBnbWFpbC5jb20iLCJpYXQiOjE2NTgwOTc0MzR9.-c2PWQRtFePDEYC_E4T6iEONYc9Zma_2o7Xod_VwVrI",
 								"type": "text"
 							}
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"title\": \"one big of a title\",\n    \"note\": \"some note here\"\n}",
+							"raw": "{\n    \"title\": \"one big of a title 3\",\n    \"note\": \"some note here\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -234,7 +234,7 @@
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJsdWlzZnZhbmluM0BnbWFpbC5jb20iLCJpYXQiOjE2NTgwMTAzNDF9.93kLoSl24RiSIGaYts1gzpy2U6N1FbRBctZxferzk1w",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiZW1haWwiOiJsdWlzZnZhbmluMkBnbWFpbC5jb20iLCJpYXQiOjE2NTgwOTc0MzR9.-c2PWQRtFePDEYC_E4T6iEONYc9Zma_2o7Xod_VwVrI",
 								"type": "text"
 							}
 						],
@@ -270,7 +270,7 @@
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJsdWlzZnZhbmluM0BnbWFpbC5jb20iLCJpYXQiOjE2NTgwMTAzNDF9.93kLoSl24RiSIGaYts1gzpy2U6N1FbRBctZxferzk1w",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiZW1haWwiOiJsdWlzZnZhbmluMkBnbWFpbC5jb20iLCJpYXQiOjE2NTgwOTc0MzR9.-c2PWQRtFePDEYC_E4T6iEONYc9Zma_2o7Xod_VwVrI",
 								"type": "text"
 							}
 						],
@@ -284,13 +284,13 @@
 							}
 						},
 						"url": {
-							"raw": "{{baseUrl}}/notes/1",
+							"raw": "{{baseUrl}}/notes/3",
 							"host": [
 								"{{baseUrl}}"
 							],
 							"path": [
 								"notes",
-								"1"
+								"3"
 							]
 						}
 					},
@@ -303,7 +303,7 @@
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJsdWlzZnZhbmluM0BnbWFpbC5jb20iLCJpYXQiOjE2NTgwMTAzNDF9.93kLoSl24RiSIGaYts1gzpy2U6N1FbRBctZxferzk1w",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiZW1haWwiOiJsdWlzZnZhbmluMkBnbWFpbC5jb20iLCJpYXQiOjE2NTgwOTc0MzR9.-c2PWQRtFePDEYC_E4T6iEONYc9Zma_2o7Xod_VwVrI",
 								"type": "text"
 							}
 						],
@@ -317,13 +317,13 @@
 							}
 						},
 						"url": {
-							"raw": "{{baseUrl}}/notes/1",
+							"raw": "{{baseUrl}}/notes/3",
 							"host": [
 								"{{baseUrl}}"
 							],
 							"path": [
 								"notes",
-								"1"
+								"3"
 							]
 						}
 					},
@@ -341,13 +341,13 @@
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJsdWlzZnZhbmluM0BnbWFpbC5jb20iLCJpYXQiOjE2NTgwMTAzNDF9.93kLoSl24RiSIGaYts1gzpy2U6N1FbRBctZxferzk1w",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiZW1haWwiOiJsdWlzZnZhbmluMkBnbWFpbC5jb20iLCJpYXQiOjE2NTgwOTc0MzR9.-c2PWQRtFePDEYC_E4T6iEONYc9Zma_2o7Xod_VwVrI",
 								"type": "text"
 							}
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"label\": \"wifi casa\",\n    \"name\": \"Casa\",\n    \"password\": \"0504030201\"\n}",
+							"raw": "{\n    \"label\": \"wifi casa 2\",\n    \"name\": \"Casa\",\n    \"password\": \"0504030201\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -377,7 +377,7 @@
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJsdWlzZnZhbmluM0BnbWFpbC5jb20iLCJpYXQiOjE2NTgwMTAzNDF9.93kLoSl24RiSIGaYts1gzpy2U6N1FbRBctZxferzk1w",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiZW1haWwiOiJsdWlzZnZhbmluMkBnbWFpbC5jb20iLCJpYXQiOjE2NTgwOTc0MzR9.-c2PWQRtFePDEYC_E4T6iEONYc9Zma_2o7Xod_VwVrI",
 								"type": "text"
 							}
 						],
@@ -413,7 +413,7 @@
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJsdWlzZnZhbmluM0BnbWFpbC5jb20iLCJpYXQiOjE2NTgwMTAzNDF9.93kLoSl24RiSIGaYts1gzpy2U6N1FbRBctZxferzk1w",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiZW1haWwiOiJsdWlzZnZhbmluMkBnbWFpbC5jb20iLCJpYXQiOjE2NTgwOTc0MzR9.-c2PWQRtFePDEYC_E4T6iEONYc9Zma_2o7Xod_VwVrI",
 								"type": "text"
 							}
 						],
@@ -427,13 +427,13 @@
 							}
 						},
 						"url": {
-							"raw": "{{baseUrl}}/wifi/1",
+							"raw": "{{baseUrl}}/wifi/2",
 							"host": [
 								"{{baseUrl}}"
 							],
 							"path": [
 								"wifi",
-								"1"
+								"2"
 							]
 						}
 					},
@@ -446,7 +446,7 @@
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJsdWlzZnZhbmluM0BnbWFpbC5jb20iLCJpYXQiOjE2NTgwMTAzNDF9.93kLoSl24RiSIGaYts1gzpy2U6N1FbRBctZxferzk1w",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiZW1haWwiOiJsdWlzZnZhbmluMkBnbWFpbC5jb20iLCJpYXQiOjE2NTgwOTc0MzR9.-c2PWQRtFePDEYC_E4T6iEONYc9Zma_2o7Xod_VwVrI",
 								"type": "text"
 							}
 						],
@@ -460,13 +460,13 @@
 							}
 						},
 						"url": {
-							"raw": "{{baseUrl}}/wifi/1",
+							"raw": "{{baseUrl}}/wifi/2",
 							"host": [
 								"{{baseUrl}}"
 							],
 							"path": [
 								"wifi",
-								"1"
+								"2"
 							]
 						}
 					},
@@ -484,13 +484,13 @@
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJsdWlzZnZhbmluM0BnbWFpbC5jb20iLCJpYXQiOjE2NTgwMTAzNDF9.93kLoSl24RiSIGaYts1gzpy2U6N1FbRBctZxferzk1w",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiZW1haWwiOiJsdWlzZnZhbmluMkBnbWFpbC5jb20iLCJpYXQiOjE2NTgwOTc0MzR9.-c2PWQRtFePDEYC_E4T6iEONYc9Zma_2o7Xod_VwVrI",
 								"type": "text"
 							}
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"cvc\": \"111\",\n    \"fullName\": \"Luis F V Martins\",\n    \"label\": \"laranjinha\",\n    \"number\": \"1234123412341234\",\n    \"password\": \"1234\",\n    \"type\": \"DEBITO\",\n    \"isVirtual\": false,\n    \"expDate\": \"20/11\"\n}",
+							"raw": "{\n    \"cvc\": \"111\",\n    \"fullName\": \"Luis F V Martins\",\n    \"label\": \"laranjinha 3\",\n    \"number\": \"1234123412341234\",\n    \"password\": \"1234\",\n    \"type\": \"DEBITO\",\n    \"isVirtual\": false,\n    \"expDate\": \"20/11\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -512,6 +512,78 @@
 									"value": null,
 									"disabled": true
 								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get all",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiZW1haWwiOiJsdWlzZnZhbmluMkBnbWFpbC5jb20iLCJpYXQiOjE2NTgwOTc0MzR9.-c2PWQRtFePDEYC_E4T6iEONYc9Zma_2o7Xod_VwVrI",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/card/",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"card",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get one",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiZW1haWwiOiJsdWlzZnZhbmluMkBnbWFpbC5jb20iLCJpYXQiOjE2NTgwOTc0MzR9.-c2PWQRtFePDEYC_E4T6iEONYc9Zma_2o7Xod_VwVrI",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/card/6",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"card",
+								"6"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJsdWlzZnZhbmluM0BnbWFpbC5jb20iLCJpYXQiOjE2NTgwMTAzNDF9.93kLoSl24RiSIGaYts1gzpy2U6N1FbRBctZxferzk1w",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/card/4",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"card",
+								"4"
 							]
 						}
 					},

@@ -12,4 +12,8 @@ cardRouter.post(
     cardController.create
 );
 
+cardRouter.get("/", authentication, cardController.getAll);
+cardRouter.get("/:cardId", authentication, cardController.getOne);
+cardRouter.delete("/:cardId", authentication, cardController.delete);
+
 export default cardRouter;
