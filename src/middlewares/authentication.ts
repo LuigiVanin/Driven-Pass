@@ -1,6 +1,7 @@
 import { NextFunction, Response, Request } from "express";
 import jwt from "jsonwebtoken";
 import prisma from "../config/database";
+import authRepository from "../repositories/authRepository";
 import HttpError from "../utils/exceptions";
 import { tokenSchema } from "../utils/schemas";
 import { StatusCode } from "../utils/statusCode";
@@ -30,11 +31,7 @@ const authentication = async (
     // if (timeNowInSeconds - iat > 15 * 60) {
     //     return res.status(401).send({ message: "your token is too old!" });
     // }
-    const user = await prisma.user.findUnique({
-        where: {
-            id,
-        },
-    });
+    const user = await authRepository.getUserById(id);
     if (!user) {
         throw new HttpError(
             StatusCode.Anauthorized_401,
@@ -42,6 +39,7 @@ const authentication = async (
         );
     }
     console.log(user);
+    res.locals.user = user;
     next();
 };
 

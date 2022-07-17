@@ -1,46 +1,30 @@
 import Cryptr from "cryptr";
 import prisma from "../config/database";
-import "../config/setup";
 import HttpError from "../utils/exceptions";
-import { credentialIdSchema } from "../utils/schemas";
+import { idSchema } from "../utils/schemas";
 import { StatusCode } from "../utils/statusCode";
 
-const credentialService = {
+const wifiService = {
     crypt: new Cryptr(process.env.CRYPT_KEY || "default"),
 
-    async createCredential(
+    async create(
         label: string,
-        url: string,
+        name: string,
         password: string,
-        username: string,
         userId: number
     ) {
-        console.log(label, url, password, username, userId);
-        const userHasLabel = await prisma.credential.findFirst({
-            where: {
-                userId,
-                label,
-            },
-        });
-        if (userHasLabel) {
-            throw new HttpError(
-                StatusCode.Conflict_409,
-                "Já existe essa label para seu usuário"
-            );
-        }
-        await prisma.credential.create({
+        await prisma.wifi.create({
             data: {
                 label,
+                name,
                 password: this.crypt.encrypt(password),
-                url,
-                username,
                 userId,
             },
         });
     },
 
     async getAll(userId: number) {
-        const itens = await prisma.credential.findMany({
+        const itens = await prisma.wifi.findMany({
             where: {
                 userId,
             },
@@ -54,25 +38,25 @@ const credentialService = {
         });
     },
 
-    async getOne(userId: number, credentialId: string | number) {
-        const validation = credentialIdSchema.validate(credentialId);
+    async getOne(userId: number, wifiId: string | number) {
+        const validation = idSchema.validate(wifiId);
         if (validation.error) {
             throw new HttpError(
                 StatusCode.BadRequest_400,
                 "Parâmetro de request mal formado"
             );
         }
-        credentialId = validation.value as number;
-        const item = await prisma.credential.findFirst({
+        wifiId = validation.value as number;
+        const item = await prisma.wifi.findFirst({
             where: {
                 userId,
-                id: credentialId,
+                id: wifiId,
             },
         });
         if (!item) {
             throw new HttpError(
                 StatusCode.Forbidden_403,
-                "A credencial não existe ou não pertece a você"
+                "A wifi não existe ou não pertece a você"
             );
         }
 
@@ -82,19 +66,19 @@ const credentialService = {
         };
     },
 
-    async deleteOne(userId: number, credentialId: string | number) {
-        const validation = credentialIdSchema.validate(credentialId);
+    async deleteOne(userId: number, wifiId: string | number) {
+        const validation = idSchema.validate(wifiId);
         if (validation.error) {
             throw new HttpError(
                 StatusCode.BadRequest_400,
                 "Parâmetro de request mal formado"
             );
         }
-        credentialId = validation.value as number;
-        const item = await prisma.credential.findFirst({
+        wifiId = validation.value as number;
+        const item = await prisma.wifi.findFirst({
             where: {
                 userId,
-                id: credentialId,
+                id: wifiId,
             },
         });
         if (!item) {
@@ -103,12 +87,12 @@ const credentialService = {
                 "A credencial não existe ou não pertece a você"
             );
         }
-        await prisma.credential.delete({
+        await prisma.wifi.delete({
             where: {
-                id: credentialId,
+                id: wifiId,
             },
         });
     },
 };
 
-export default credentialService;
+export default wifiService;

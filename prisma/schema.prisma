@@ -21,7 +21,7 @@ model User {
 }
 
 model Credential {
-  id        BigInt   @id @default(autoincrement())
+  id        Int      @id @default(autoincrement())
   label     String
   password  String
   url       String
@@ -38,7 +38,7 @@ model Wifi {
   id        Int      @id @default(autoincrement())
   label     String
   name      String
-  title     String
+  password  String
   userId    Int
   createdAt DateTime @default(now())
 

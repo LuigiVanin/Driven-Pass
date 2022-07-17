@@ -17,6 +17,7 @@ const errorHandler = (
             .status(StatusCode.UnprocessableEntity_422)
             .send("Problema de converter JWT");
     }
+    console.log(error);
     return res.status(500).send(error);
 };
 
