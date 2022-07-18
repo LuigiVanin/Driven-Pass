@@ -1,6 +1,7 @@
 import Cryptr from "cryptr";
 import prisma from "../config/database";
 import "../config/setup";
+import credentialRepository from "../repositories/credentialRepository";
 import HttpError from "../utils/exceptions";
 import { credentialIdSchema } from "../utils/schemas";
 import { StatusCode } from "../utils/statusCode";
@@ -16,36 +17,27 @@ const credentialService = {
         userId: number
     ) {
         console.log(label, url, password, username, userId);
-        const userHasLabel = await prisma.credential.findFirst({
-            where: {
-                userId,
-                label,
-            },
-        });
+        const userHasLabel = await credentialRepository.getItemByUserIdAndLabel(
+            label,
+            userId
+        );
         if (userHasLabel) {
             throw new HttpError(
                 StatusCode.Conflict_409,
                 "Já existe essa label para seu usuário"
             );
         }
-        await prisma.credential.create({
-            data: {
-                label,
-                password: this.crypt.encrypt(password),
-                url,
-                username,
-                userId,
-            },
-        });
+        await credentialRepository.createItem(
+            label,
+            url,
+            password,
+            username,
+            userId
+        );
     },
 
     async getAll(userId: number) {
-        const itens = await prisma.credential.findMany({
-            where: {
-                userId,
-            },
-        });
-
+        const itens = await credentialRepository.getAllItens(userId);
         return itens.map((item) => {
             return {
                 ...item,
@@ -63,12 +55,10 @@ const credentialService = {
             );
         }
         credentialId = validation.value as number;
-        const item = await prisma.credential.findFirst({
-            where: {
-                userId,
-                id: credentialId,
-            },
-        });
+        const item = await credentialRepository.getItemByUserIdAndId(
+            credentialId,
+            userId
+        );
         if (!item) {
             throw new HttpError(
                 StatusCode.Forbidden_403,
@@ -91,23 +81,17 @@ const credentialService = {
             );
         }
         credentialId = validation.value as number;
-        const item = await prisma.credential.findFirst({
-            where: {
-                userId,
-                id: credentialId,
-            },
-        });
+        const item = await credentialRepository.getItemByUserIdAndId(
+            credentialId,
+            userId
+        );
         if (!item) {
             throw new HttpError(
                 StatusCode.Forbidden_403,
                 "A credencial não existe ou não pertece a você"
             );
         }
-        await prisma.credential.delete({
-            where: {
-                id: credentialId,
-            },
-        });
+        await credentialRepository.deleteItemById(credentialId);
     },
 };
 
