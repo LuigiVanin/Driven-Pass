@@ -84,7 +84,7 @@
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiZW1haWwiOiJsdWlzZnZhbmluMkBnbWFpbC5jb20iLCJpYXQiOjE2NTgwOTc0MzR9.-c2PWQRtFePDEYC_E4T6iEONYc9Zma_2o7Xod_VwVrI",
+								"value": "Bearer {{token}}",
 								"type": "text"
 							},
 							{
@@ -95,7 +95,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"label\":\"qualquer coisa 3\", \n    \"url\": \"https://\", \n    \"password\": \"uam senha\", \n    \"username\": \"meu nome de usuário\"\n}",
+							"raw": "{\n    \"label\":\"qualquer coisa 6\", \n    \"url\": \"https://\", \n    \"password\": \"uam senha\", \n    \"username\": \"meu nome de usuário\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -121,18 +121,18 @@
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiZW1haWwiOiJsdWlzZnZhbmluMkBnbWFpbC5jb20iLCJpYXQiOjE2NTgwOTc0MzR9.-c2PWQRtFePDEYC_E4T6iEONYc9Zma_2o7Xod_VwVrI",
+								"value": "Bearer {{token}}",
 								"type": "text"
 							}
 						],
 						"url": {
-							"raw": "{{baseUrl}}/credential/4",
+							"raw": "{{baseUrl}}/credential/1",
 							"host": [
 								"{{baseUrl}}"
 							],
 							"path": [
 								"credential",
-								"4"
+								"1"
 							]
 						}
 					},
@@ -145,18 +145,18 @@
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiZW1haWwiOiJsdWlzZnZhbmluMkBnbWFpbC5jb20iLCJpYXQiOjE2NTgwOTc0MzR9.-c2PWQRtFePDEYC_E4T6iEONYc9Zma_2o7Xod_VwVrI",
+								"value": "Bearer {{token}}",
 								"type": "text"
 							}
 						],
 						"url": {
-							"raw": "{{baseUrl}}/credential/4",
+							"raw": "{{baseUrl}}/credential/1",
 							"host": [
 								"{{baseUrl}}"
 							],
 							"path": [
 								"credential",
-								"4"
+								"1"
 							]
 						}
 					},
@@ -169,7 +169,7 @@
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiZW1haWwiOiJsdWlzZnZhbmluMkBnbWFpbC5jb20iLCJpYXQiOjE2NTgwOTc0MzR9.-c2PWQRtFePDEYC_E4T6iEONYc9Zma_2o7Xod_VwVrI",
+								"value": "Bearer {{token}}",
 								"type": "text"
 							}
 						],
@@ -198,7 +198,7 @@
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiZW1haWwiOiJsdWlzZnZhbmluMkBnbWFpbC5jb20iLCJpYXQiOjE2NTgwOTc0MzR9.-c2PWQRtFePDEYC_E4T6iEONYc9Zma_2o7Xod_VwVrI",
+								"value": "Bearer {{token}}",
 								"type": "text"
 							}
 						],
@@ -234,7 +234,7 @@
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiZW1haWwiOiJsdWlzZnZhbmluMkBnbWFpbC5jb20iLCJpYXQiOjE2NTgwOTc0MzR9.-c2PWQRtFePDEYC_E4T6iEONYc9Zma_2o7Xod_VwVrI",
+								"value": "Bearer {{token}}",
 								"type": "text"
 							}
 						],
@@ -270,7 +270,7 @@
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiZW1haWwiOiJsdWlzZnZhbmluMkBnbWFpbC5jb20iLCJpYXQiOjE2NTgwOTc0MzR9.-c2PWQRtFePDEYC_E4T6iEONYc9Zma_2o7Xod_VwVrI",
+								"value": "Bearer {{token}}",
 								"type": "text"
 							}
 						],
@@ -284,13 +284,13 @@
 							}
 						},
 						"url": {
-							"raw": "{{baseUrl}}/notes/3",
+							"raw": "{{baseUrl}}/notes/1",
 							"host": [
 								"{{baseUrl}}"
 							],
 							"path": [
 								"notes",
-								"3"
+								"1"
 							]
 						}
 					},
@@ -303,7 +303,7 @@
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiZW1haWwiOiJsdWlzZnZhbmluMkBnbWFpbC5jb20iLCJpYXQiOjE2NTgwOTc0MzR9.-c2PWQRtFePDEYC_E4T6iEONYc9Zma_2o7Xod_VwVrI",
+								"value": "Bearer {{token}}",
 								"type": "text"
 							}
 						],
@@ -317,13 +317,13 @@
 							}
 						},
 						"url": {
-							"raw": "{{baseUrl}}/notes/3",
+							"raw": "{{baseUrl}}/notes/1",
 							"host": [
 								"{{baseUrl}}"
 							],
 							"path": [
 								"notes",
-								"3"
+								"1"
 							]
 						}
 					},
@@ -341,7 +341,7 @@
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiZW1haWwiOiJsdWlzZnZhbmluMkBnbWFpbC5jb20iLCJpYXQiOjE2NTgwOTc0MzR9.-c2PWQRtFePDEYC_E4T6iEONYc9Zma_2o7Xod_VwVrI",
+								"value": "Bearer {{token}}",
 								"type": "text"
 							}
 						],
@@ -377,7 +377,7 @@
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiZW1haWwiOiJsdWlzZnZhbmluMkBnbWFpbC5jb20iLCJpYXQiOjE2NTgwOTc0MzR9.-c2PWQRtFePDEYC_E4T6iEONYc9Zma_2o7Xod_VwVrI",
+								"value": "Bearer {{token}}",
 								"type": "text"
 							}
 						],
@@ -413,7 +413,7 @@
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiZW1haWwiOiJsdWlzZnZhbmluMkBnbWFpbC5jb20iLCJpYXQiOjE2NTgwOTc0MzR9.-c2PWQRtFePDEYC_E4T6iEONYc9Zma_2o7Xod_VwVrI",
+								"value": "Bearer {{token}}",
 								"type": "text"
 							}
 						],
@@ -427,13 +427,13 @@
 							}
 						},
 						"url": {
-							"raw": "{{baseUrl}}/wifi/2",
+							"raw": "{{baseUrl}}/wifi/1",
 							"host": [
 								"{{baseUrl}}"
 							],
 							"path": [
 								"wifi",
-								"2"
+								"1"
 							]
 						}
 					},
@@ -446,7 +446,7 @@
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiZW1haWwiOiJsdWlzZnZhbmluMkBnbWFpbC5jb20iLCJpYXQiOjE2NTgwOTc0MzR9.-c2PWQRtFePDEYC_E4T6iEONYc9Zma_2o7Xod_VwVrI",
+								"value": "Bearer {{token}}",
 								"type": "text"
 							}
 						],
@@ -460,13 +460,13 @@
 							}
 						},
 						"url": {
-							"raw": "{{baseUrl}}/wifi/2",
+							"raw": "{{baseUrl}}/wifi/1",
 							"host": [
 								"{{baseUrl}}"
 							],
 							"path": [
 								"wifi",
-								"2"
+								"1"
 							]
 						}
 					},
@@ -484,7 +484,7 @@
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiZW1haWwiOiJsdWlzZnZhbmluMkBnbWFpbC5jb20iLCJpYXQiOjE2NTgwOTc0MzR9.-c2PWQRtFePDEYC_E4T6iEONYc9Zma_2o7Xod_VwVrI",
+								"value": "Bearer {{token}}",
 								"type": "text"
 							}
 						],
@@ -524,7 +524,7 @@
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiZW1haWwiOiJsdWlzZnZhbmluMkBnbWFpbC5jb20iLCJpYXQiOjE2NTgwOTc0MzR9.-c2PWQRtFePDEYC_E4T6iEONYc9Zma_2o7Xod_VwVrI",
+								"value": "Bearer {{token}}",
 								"type": "text"
 							}
 						],
@@ -548,18 +548,18 @@
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiZW1haWwiOiJsdWlzZnZhbmluMkBnbWFpbC5jb20iLCJpYXQiOjE2NTgwOTc0MzR9.-c2PWQRtFePDEYC_E4T6iEONYc9Zma_2o7Xod_VwVrI",
+								"value": "Bearer {{token}}",
 								"type": "text"
 							}
 						],
 						"url": {
-							"raw": "{{baseUrl}}/card/6",
+							"raw": "{{baseUrl}}/card/1",
 							"host": [
 								"{{baseUrl}}"
 							],
 							"path": [
 								"card",
-								"6"
+								"1"
 							]
 						}
 					},
@@ -572,18 +572,18 @@
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJsdWlzZnZhbmluM0BnbWFpbC5jb20iLCJpYXQiOjE2NTgwMTAzNDF9.93kLoSl24RiSIGaYts1gzpy2U6N1FbRBctZxferzk1w",
+								"value": "Bearer {{token}}",
 								"type": "text"
 							}
 						],
 						"url": {
-							"raw": "{{baseUrl}}/card/4",
+							"raw": "{{baseUrl}}/card/1",
 							"host": [
 								"{{baseUrl}}"
 							],
 							"path": [
 								"card",
-								"4"
+								"1"
 							]
 						}
 					},
