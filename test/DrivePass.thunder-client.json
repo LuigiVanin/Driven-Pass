@@ -1,0 +1,74 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "Drive Pass",
+    "dateExported": "2022-07-18T05:29:32.507Z",
+    "version": "1.1",
+    "folders": [
+        {
+            "_id": "f9585e6d-ee87-4e1e-9ccf-47f355f3df5e",
+            "name": "Auth",
+            "containerId": "",
+            "created": "2022-07-18T05:19:42.259Z",
+            "sortNum": 10000
+        },
+        {
+            "_id": "10b9c23f-26a9-4392-8650-536b49bb4cf2",
+            "name": "Credential",
+            "containerId": "",
+            "created": "2022-07-18T05:28:14.390Z",
+            "sortNum": 20000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "a866b56f-4a2b-4be4-9f13-08a1545c70c2",
+            "colId": "6f6de8af-965c-4e2a-b41c-c8aa52406b73",
+            "containerId": "f9585e6d-ee87-4e1e-9ccf-47f355f3df5e",
+            "name": "signUp",
+            "url": "{{baseUrl}}/signup",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2022-07-18T05:19:54.153Z",
+            "modified": "2022-07-18T05:25:10.367Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n    \"email\": \"luisfvanin3@gmail.com\",\n    \"password\": \"1234567890\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "d1e089b8-2d99-44b3-ac30-eddcf606a93e",
+            "colId": "6f6de8af-965c-4e2a-b41c-c8aa52406b73",
+            "containerId": "f9585e6d-ee87-4e1e-9ccf-47f355f3df5e",
+            "name": "signIn",
+            "url": "{{baseUrl}}/signin",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2022-07-18T05:26:33.166Z",
+            "modified": "2022-07-18T05:27:09.265Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n    \"email\": \"luisfvanin2@gmail.com\",\n    \"password\": \"1234567890\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "22e90916-10a8-4c01-a530-8edf1376424a",
+            "colId": "6f6de8af-965c-4e2a-b41c-c8aa52406b73",
+            "containerId": "10b9c23f-26a9-4392-8650-536b49bb4cf2",
+            "name": "create",
+            "url": "",
+            "method": "GET",
+            "sortNum": 50000,
+            "created": "2022-07-18T05:28:39.576Z",
+            "modified": "2022-07-18T05:28:39.576Z",
+            "headers": []
+        }
+    ]
+}
