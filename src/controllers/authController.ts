@@ -7,7 +7,7 @@ const authController = {
         const { email, password } = req.body;
         await authService.signUp(email, password);
 
-        return res.send({ email, password });
+        return res.status(201).send({ email, password });
     },
 
     async signIn(req: CustomRequest<AuthUser>, res: Response) {

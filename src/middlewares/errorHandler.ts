@@ -1,5 +1,5 @@
 import { NextFunction, Request, Response } from "express";
-import { JsonWebTokenError } from "jsonwebtoken";
+import jwt from "jsonwebtoken";
 import HttpError from "../utils/exceptions";
 import { StatusCode } from "../utils/statusCode";
 
@@ -12,7 +12,7 @@ const errorHandler = (
     if (error instanceof HttpError) {
         return res.status(error.statusCode).send({ details: error.details });
     }
-    if (error instanceof JsonWebTokenError) {
+    if (error instanceof jwt.JsonWebTokenError) {
         return res
             .status(StatusCode.UnprocessableEntity_422)
             .send("Problema de converter JWT");
